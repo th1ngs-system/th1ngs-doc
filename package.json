@@ -1,0 +1,13 @@
+{
+  "name": "doc-th1ngs",
+  "version": "1.0.0",
+  "description": "Th1ngs product documentation site",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve --port=8080",
+    "watch": "eleventy --watch"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

@@ -1,0 +1,51 @@
+/* lobellcom.css — Th1ngs brand / lobellcom overrides */
+
+:root {
+  --brand-primary: #4f46e5;
+  --brand-secondary: #7c3aed;
+  --brand-dark: #18181b;
+}
+
+/* Brand gradient accent */
+.brand-gradient {
+  background: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Badge pill */
+.badge-pill {
+  display: inline-flex; align-items: center; gap: .3rem;
+  font-size: .72rem; font-weight: 600; padding: .2em .65em;
+  border-radius: 999px; background: var(--accent-light); color: var(--accent);
+  border: 1px solid #c7d2fe; font-family: var(--font-mono);
+}
+
+/* Version tag in nav */
+.nav-version {
+  font-size: .68rem; color: #6366f1; background: #eef2ff;
+  border: 1px solid #c7d2fe; border-radius: 999px;
+  padding: .15em .6em; font-weight: 600; font-family: var(--font-mono);
+  flex-shrink: 0;
+}
+
+/* Footer */
+.doc-footer {
+  border-top: 1px solid var(--border);
+  padding: 2rem 3rem;
+  margin-left: var(--sidebar-w);
+  color: var(--muted);
+  font-size: .8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.doc-footer a { color: var(--muted); text-decoration: none; }
+.doc-footer a:hover { color: var(--accent); }
+
+@media (max-width: 768px) {
+  .doc-footer { margin-left: 0; padding: 1.5rem 1rem; }
+}
