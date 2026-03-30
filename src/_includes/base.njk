@@ -95,6 +95,19 @@
       {% endif %}
     </div>
 
+    <div class="sb-group-label">Box Types</div>
+    <div class="sb-group">
+      <a href="/box-types/" class="sb-link {% if '/box-types/' in page.url and page.url != '/box-types/mailbox/' and page.url != '/box-types/stuff/' %}active{% endif %}">
+        <i class="bi bi-grid-1x2"></i> All Box Types
+      </a>
+      <a href="/box-types/mailbox/" class="sb-link {% if page.url == '/box-types/mailbox/' %}active{% endif %}">
+        <i class="bi bi-envelope-at"></i> Mailbox
+      </a>
+      <a href="/box-types/stuff/" class="sb-link {% if page.url == '/box-types/stuff/' %}active{% endif %}">
+        <i class="bi bi-kanban"></i> Stuff
+      </a>
+    </div>
+
     <div class="sb-divider"></div>
     <div class="sb-group">
       <a href="https://th1ngs.com" class="sb-link" target="_blank" rel="noopener">
@@ -115,6 +128,11 @@
   {{ content | safe }}
 
 </div>
+
+<!-- Floating contact button -->
+<a href="/contact/" class="fab-contact" aria-label="Contact us" title="Contact us">
+  <i class="bi bi-chat-dots"></i>
+</a>
 
 <!-- Mobile sidebar toggle -->
 <button class="mob-toggle" id="mobToggle" aria-label="Open navigation">
