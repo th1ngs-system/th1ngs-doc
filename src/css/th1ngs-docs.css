@@ -159,6 +159,24 @@
   border-color: var(--accent);
 }
 
+/* ── Subscribe ── */
+.subscribe-wrap {
+  max-width: 480px;
+  margin-top: 1.5rem;
+}
+.sib-form-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .75rem;
+  padding: 2.5rem 1.5rem;
+  border: 2px dashed var(--border);
+  border-radius: 12px;
+  text-align: center;
+  color: var(--muted);
+  font-size: .9rem;
+}
+
 /* ── Floating contact button ── */
 .fab-contact {
   position: fixed;
