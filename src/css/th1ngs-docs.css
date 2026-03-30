@@ -50,6 +50,19 @@
   .doc-footer { margin-left: 0; padding: 1.5rem 1rem; }
 }
 
+/* ── Sidebar child links ── */
+.sb-link-child {
+  padding-left: 2rem !important;
+  font-size: .82rem !important;
+}
+.sb-link-child::before {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 100%;
+  background: var(--border);
+}
+
 /* ── Box Types ── */
 .bt-grid {
   display: flex;
