@@ -49,3 +49,46 @@
 @media (max-width: 768px) {
   .doc-footer { margin-left: 0; padding: 1.5rem 1rem; }
 }
+
+/* ── Contact form ── */
+.contact-form {
+  max-width: 520px;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+.cf-row { display: flex; flex-direction: column; gap: .35rem; }
+.cf-label {
+  font-size: .8rem; font-weight: 600; color: var(--text-2);
+}
+.cf-input {
+  font-family: var(--font); font-size: .9rem;
+  padding: .55rem .8rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  outline: none;
+  transition: border-color .15s, box-shadow .15s;
+  width: 100%;
+}
+.cf-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px #eef2ff;
+}
+.cf-textarea { min-height: 130px; resize: vertical; }
+.cf-submit {
+  align-self: flex-start;
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--font);
+  font-size: .85rem;
+  font-weight: 600;
+  padding: .55rem 1.4rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background .15s;
+}
+.cf-submit:hover { background: var(--accent-hover); }
